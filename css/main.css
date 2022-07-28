@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links {
   width: 100%;
-  height: 12vh;
+  height: 12%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,12 +53,48 @@ h1, h2, h3, h4, h5, h6 {
 .nav-links-list {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: #112B3C;
+  padding: 1.2rem 1rem;
+  transition: 0.5s ease;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 1px;
+  background-color: #F66B0E;
+  transition: 0.5s ease;
+}
+.nav-link:hover:before {
+  width: 100%;
+  background-color: #F66B0E;
 }
 
 .nav-btns {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
+}
+
+.btn-buy {
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  background-color: #F66B0E;
+  border: 1px solid #F66B0E;
+  transition: 0.5s ease;
+}
+.btn-buy:hover {
+  background-color: transparent;
+  border: 1px solid #F66B0E;
+  color: #112B3C;
 }
 
 .header-section {
@@ -68,11 +104,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-content {
   width: 100%;
-  height: 88vh;
+  height: 88%;
+  position: relative;
 }
 
 .header-content-text {
-  height: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,6 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
   width: 700px;
   margin: 0 auto;
+  background-color: #fff;
+  z-index: 9;
   /* Remove o X do campo search */
 }
 .header-input input[type=search] {
@@ -138,6 +177,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-input input[type=search]::-webkit-search-results-button,
 .header-input input[type=search]::-webkit-search-results-decoration {
   display: none;
+}
+
+.header-content-img {
+  background-color: red;
+  margin-top: -18.3rem;
+}
+.header-content-img img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

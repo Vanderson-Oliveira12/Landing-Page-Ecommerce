@@ -1,6 +1,8 @@
+@use '../4-abstracts/variables';
+
 .nav-links{
     width: 100%;
-    height: 12vh;
+    height: 12%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,10 +11,49 @@
 .nav-links-list{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: .5rem;
+}
+
+.nav-link{
+    color: variables.$link-color;
+    padding: 1.2rem 1rem;
+    transition: .5s ease;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        width: 1px;
+        background-color: #F66B0E;
+        transition: .5s ease;
+    }
+
+    &:hover:before{
+        width: 100%;
+        background-color: #F66B0E;
+    }
 }
 
 .nav-btns{
     display: flex;
+    align-items: center;
     gap: 1.5rem;
+}
+
+.btn-buy{
+    color: #fff;
+    padding: 1.2rem 1.6rem;
+    background-color: #F66B0E;
+    border: 1px solid #F66B0E;
+    transition: .5s ease;
+
+    &:hover{
+        background-color: transparent;
+        border: 1px solid #F66B0E;
+        color: variables.$link-color;
+    }
 }
