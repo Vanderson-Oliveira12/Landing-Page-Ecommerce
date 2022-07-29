@@ -42,6 +42,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #828282;
 }
 
+.title-section {
+  font-size: 4.2rem;
+}
+
+.secondary-text {
+  color: #BDBDBD;
+}
+
+.line-spacing {
+  line-height: 2.4rem;
+}
+
 .nav-links {
   width: 100%;
   height: 12%;
@@ -184,6 +196,71 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-content-img img {
   width: 100%;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5.2rem 0;
+}
+
+/* About */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.about-text p {
+  width: 40%;
+}
+
+.about-content {
+  padding-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-content-mission {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about-content-mission h3 {
+  color: #F66B0E;
+  font-size: 5.2rem;
+}
+.about-content-mission h4 {
+  color: #000;
+  font-size: 1.8rem;
+  padding-bottom: 1.2rem;
+}
+.about-content-mission p {
+  width: 80%;
+}
+
+.about-content-img {
+  flex: 1 0 50%;
+}
+
+.about-cards-group {
+  display: flex;
+}
+
+.about-content-img {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.about-img-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.img-group-two {
+  margin-top: -8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

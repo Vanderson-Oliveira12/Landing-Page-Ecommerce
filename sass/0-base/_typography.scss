@@ -7,3 +7,15 @@ h1, h2, h3, h4, h5, h6{
 .text-color{
     color: variables.$text-color;
 }
+
+.title-section{
+    font-size: 4.2rem;
+}
+
+.secondary-text{
+    color: variables.$secondary-color;
+}
+
+.line-spacing{
+    line-height: 2.4rem;
+}
