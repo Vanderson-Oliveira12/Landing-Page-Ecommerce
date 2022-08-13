@@ -43,17 +43,3 @@
     align-items: center;
     gap: 1.5rem;
 }
-
-.btn-buy{
-    color: #fff;
-    padding: 1.2rem 1.6rem;
-    background-color: #F66B0E;
-    border: 1px solid #F66B0E;
-    transition: .5s ease;
-
-    &:hover{
-        background-color: transparent;
-        border: 1px solid #F66B0E;
-        color: variables.$link-color;
-    }
-}
