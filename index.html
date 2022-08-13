@@ -10,6 +10,8 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Remixcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -18,7 +20,7 @@
 
 <body>
     <header class="header-section">
-        <nav class="nav-links">
+        <nav class="nav-links nav-desktop">
             <div class="logo">
                 <a href="#">
                     <img src="img/Logo.png" alt="Logo Zing.">
@@ -35,7 +37,25 @@
                 <a class="btn-buy" href="#">Compre online</a>
             </div>
         </nav>
-        <div class="header-content">
+        <nav class="nav-mobile">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Logo.png" alt="Logo Zing.">
+                </a>
+            </div>
+            <i class="ri-menu-3-line burguer"></i>
+            <!--             <ul class="nav-links-list">
+                <li><a class="nav-link" href="#">Início</a></li>
+                <li><a class="nav-link" href="#">Sobre nós</a></li>
+                <li><a class="nav-link" href="#">Produtos</a></li>
+                <li><a class="nav-link" href="#">Recomendações</a></li>
+            </ul>
+            <div class="nav-btns">
+                <a class="nav-link" href="#">Contate-nos</a>
+                <a class="btn-buy" href="#">Compre online</a>
+            </div> -->
+        </nav>
+        <div class="header-content-desktop">
             <div class="header-content-text">
                 <div class="header-content-title">
                     <div class="header-content-title-text">
@@ -44,6 +64,23 @@
                             você ama <br> a cadeira
                             em que
                             está sentado, é provável que você ame o resto da sala.</p>
+                        <img class="header-seta" src="img/elementOrange.png" alt="Seta Laranja">
+                    </div>
+                </div>
+                <div class="header-input">
+                    <input type="search" name="pesquisar" id="pesquisar" placeholder="Procure um produto">
+                    <img src="img/search-normal.png" alt="Lupa para pequisar">
+                </div>
+            </div>
+        </div>
+        <!-- Mobile -->
+        <div class="header-content-mobile">
+            <div class="header-content-text">
+                <div class="header-content-title">
+                    <div class="header-content-title-text">
+                        <h1>Móveis incríveis para sua casa</h1>
+                        <p class="text-color">Acreditamos que a cadeira é o móvel mais importante da sua casa. Porque se
+                            você ama a cadeira em que está sentado, é provável que você ame o resto da sala.</p>
                         <img class="header-seta" src="img/elementOrange.png" alt="Seta Laranja">
                     </div>
                 </div>

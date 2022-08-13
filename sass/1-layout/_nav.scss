@@ -1,4 +1,24 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
+
+nav.nav-desktop{
+    @include medias.small{
+        display: none;
+    }
+}
+
+nav.nav-mobile{
+    padding: 1rem 1.4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .burguer{
+        font-size: 2.4rem;
+        padding: 1rem;
+    }
+}
 
 .nav-links{
     width: 100%;
