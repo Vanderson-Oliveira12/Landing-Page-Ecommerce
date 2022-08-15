@@ -401,6 +401,9 @@ section {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .products-btns {
     overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 1.4rem;
   }
 }
 
@@ -435,6 +438,8 @@ section {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .products-group-item {
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
@@ -451,7 +456,7 @@ section {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .product-item {
     flex: none;
-    width: 28rem;
+    width: 32rem;
     height: 35rem;
     scroll-snap-align: start;
     scroll-padding-left: 2rem;

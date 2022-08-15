@@ -17,6 +17,9 @@
 
     @include medias.small{
         overflow-y: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1rem 1.4rem;
     }
 }
 
@@ -50,6 +53,8 @@
     padding: 1rem 0;
     
     @include medias.small{
+        justify-content: flex-start;
+        align-items: flex-start;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
     }
@@ -63,10 +68,9 @@
     background-color: #FFF8F0;
     padding-bottom: 1rem;
 
-
     @include medias.small{
         flex: none;
-        width: 28rem;
+        width: 32rem;
         height: 35rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
