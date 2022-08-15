@@ -1,4 +1,5 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
 .customers{
     width: 100%;
@@ -15,6 +16,10 @@
     color: #ffffff;
     font-size: 4.2rem;
     padding-bottom: 6rem;
+
+    @include medias.small{
+        font-size: 2.8rem;
+    }
 }
 
 .customers-content{
@@ -22,10 +27,25 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include medias.small{
+        align-items: center;
+    }
 }
 
 .customers-img{
     flex: 1 0 45%;
+
+    @include medias.small{
+        flex: 1 0 100%;
+    }
+
+    img{
+        @include medias.small{
+            width: 25rem;
+            margin: 0 auto;
+        }
+    }
 }
 
 .customers-comment{
@@ -38,11 +58,19 @@
 
 .comment-text{
     width: 80%;
+
+    @include medias.small{
+        width: 100%;
+    }
 }
 
 h3.comment-author-title{
     color: #ffffff;
     font-size: 3.6rem;
+
+    @include medias.small{
+        font-size: 2.4rem;
+    }
 }
 
 p.comment-author-text{
@@ -51,6 +79,10 @@ p.comment-author-text{
     padding: 2.4rem 0;
     font-weight: 400;
     color: #b7c0c5;
+
+    @include medias.small{
+        font-size: 1.4rem;
+    }
 }
 
 

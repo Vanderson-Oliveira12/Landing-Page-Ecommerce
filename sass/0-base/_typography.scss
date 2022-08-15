@@ -1,4 +1,5 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
 h1, h2, h3, h4, h5, h6{
     color: variables.$title-color;
@@ -10,10 +11,18 @@ h1, h2, h3, h4, h5, h6{
 
 .title-section{
     font-size: 4.2rem;
+
+    @include medias.small{
+        font-size: 2.8rem;
+    }
 }
 
 .subtitle-section{
     font-size: 2rem;
+
+    @include medias.small{
+        font-size: 1.6rem;
+    }
 }
 
 .secondary-text{

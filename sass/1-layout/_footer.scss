@@ -1,8 +1,13 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
 footer{
     width: 100%;
     padding: 5.2rem 0 3rem;
+
+    @include medias.small{
+        padding-top: 3.2rem;
+    }
 }
 
 .footer-all{
@@ -21,6 +26,12 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include medias.small{
+        gap: 3.6rem;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
 }
 
 .footer-link-item{

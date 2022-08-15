@@ -1,4 +1,5 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
 .products{
     display: flex;
@@ -13,6 +14,10 @@
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+
+    @include medias.small{
+        overflow-y: auto;
+    }
 }
 
 .products-btns input{
@@ -43,15 +48,29 @@
     justify-content: space-around;
     gap: 2rem;
     padding: 1rem 0;
+    
+    @include medias.small{
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
 }
 
 .product-item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 25% 0 1;
+    flex: 1 0 25%;
     background-color: #FFF8F0;
     padding-bottom: 1rem;
+
+
+    @include medias.small{
+        flex: none;
+        width: 28rem;
+        height: 35rem;
+        scroll-snap-align: start;
+        scroll-padding-left: 2rem;
+    }
 }
 
 .product-img{

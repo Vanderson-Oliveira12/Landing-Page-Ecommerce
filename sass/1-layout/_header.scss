@@ -16,9 +16,14 @@
 }
 
 .header-content-mobile {
-    width: 100%;
-    height: 88%;
-    position: relative;
+    display: none;
+
+    @include medias.small{
+        width: 100%;
+        height: 88%;
+        position: relative;
+        display: block;
+    }
 }
 
 .header-content-text {
@@ -40,7 +45,7 @@
         font-size: 5rem;
 
         @include medias.small {
-            font-size: 3.2rem;
+            font-size: 2.8rem;
         }
     }
 

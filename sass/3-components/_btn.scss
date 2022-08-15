@@ -1,4 +1,5 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
 .btn-buy{
     color: #fff;
@@ -21,6 +22,10 @@
     border: 1px solid #F66B0E;
     transition: .5s ease;
     font-weight: 700;
+
+    @include medias.small{
+        font-size: 1.2rem;
+    }
 
     &:hover{
         background-color: transparent;

@@ -1,64 +1,101 @@
 @use '../4-abstracts/variables';
+@use '../4-abstracts/medias';
 
-.about-text{
+.about-text {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 
-    p{
+    @include medias.small {
+        align-items: center;
+    }
+
+    p {
         width: 40%;
+
+        @include medias.small {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
-.about-content{
+.about-content {
     padding-top: 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include medias.small {
+        padding: 4rem;
+        flex-direction: column;
+    }
 }
 
-.about-content-mission{
+.about-content-mission {
     flex: 1 0 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
-    h3{
+    h3 {
         color: variables.$subtitle-color;
         font-size: 5.2rem;
     }
 
-    h4{
+    h4 {
         color: #000;
         font-size: 1.8rem;
         padding-bottom: 1.2rem;
     }
 
-    p{
+    p {
         width: 80%;
+
+        @include medias.small {
+            width: 100%;
+        }
     }
 }
 
-.about-content-img{
+.about-content-img-desktop {
     flex: 1 0 50%;
+
+    @include medias.small {
+        display: none;
+    }
 }
 
-.about-cards-group{
+.about-content-img-mobile {
+    display: none;
+
+    @include medias.small {
+        padding-top: 4rem;
+        display: block;
+    }
+}
+
+.about-cards-group {
     display: flex;
     padding-bottom: 1.2rem;
+
+    @include medias.small {
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
-.about-content-img{
+.about-content-img {
     display: flex;
     gap: 3.6rem;
 }
 
-.about-img-groups{
+.about-img-groups {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
-.img-group-two{
+.img-group-two {
     margin-top: -8rem;
 }
