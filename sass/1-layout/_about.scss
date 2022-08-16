@@ -27,7 +27,7 @@
     justify-content: space-between;
 
     @include medias.small {
-        padding: 4rem;
+        padding: 4rem 4rem 0;
         flex-direction: column;
     }
 }
@@ -70,8 +70,26 @@
     display: none;
 
     @include medias.small {
-        padding-top: 4rem;
+        margin-top: 4rem;
         display: block;
+        position: relative;
+        height: 350px;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transition: .5s ease;
+        opacity: 0;
+    }
+
+    img.active-img-about{
+        opacity: 1;
     }
 }
 
