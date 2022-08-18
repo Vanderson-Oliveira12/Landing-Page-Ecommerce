@@ -86,6 +86,8 @@
         right: 0;
         transition: .5s ease;
         opacity: 0;
+        object-fit: cover;
+        text-align: center;
     }
 
     img.active-img-about{

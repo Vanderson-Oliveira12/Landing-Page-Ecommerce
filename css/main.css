@@ -406,6 +406,8 @@ section {
   right: 0;
   transition: 0.5s ease;
   opacity: 0;
+  object-fit: cover;
+  text-align: center;
 }
 .about-content-img-mobile img.active-img-about {
   opacity: 1;
