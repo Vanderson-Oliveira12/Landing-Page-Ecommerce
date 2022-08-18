@@ -23,6 +23,24 @@
     }
 }
 
+/* Scroll, decidi tirar ele para melhor visualização */
+
+.products-btns::-webkit-scrollbar {
+    width: 0;               /* width of the entire scrollbar */
+  }
+  
+  .products-btns::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .products-btns::-webkit-scrollbar-thumb {
+    background-color: transparent;    /* color of the scroll thumb */
+    border-radius: 0;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+  }
+
+  /* Scroll */
+
 .products-btns input{
     border: none;
     background-color: transparent;
@@ -60,6 +78,24 @@
     }
 }
 
+/* Scroll, decidi tirar para melhor visualização */
+
+.products-group-item::-webkit-scrollbar {
+    width: 0;               /* width of the entire scrollbar */
+  }
+  
+  .products-group-item::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .products-group-item::-webkit-scrollbar-thumb {
+    background-color: transparent;    /* color of the scroll thumb */
+    border-radius: 0;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+  }
+
+/* Scroll */
+
 .product-item{
     display: flex;
     flex-direction: column;
@@ -72,6 +108,7 @@
         flex: none;
         width: 32rem;
         height: 35rem;
+        gap: 1.5rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
     }
@@ -87,6 +124,10 @@
     justify-content: space-between;
     align-items: center;
     padding: .8rem 2rem;
+
+    @include medias.small{
+        padding: .8rem 2.4rem;
+    }
 }
 
 .product-item-text{
