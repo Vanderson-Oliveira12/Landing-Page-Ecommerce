@@ -1,7 +1,15 @@
 # Landing Page Ecommerce
- Desenvolvendo uma WebPage com HTML, CSS e JAVASCRIPT PURO.
+ Essa WebPage foi desenvolvida com HTML, CSS e JAVASCRIPT PURO.
 
- O intuito desse página, é aprimorar os meus conhecimentos procurando aplicar um bom código que seja legível à outros desenvolvedores.
+ O intuito dessa página, foi abordar todos os tópicos que eu aprendi durante esses meses de estudos. Respeitando as boas práticas de programação,
+ e a legibilidade do código. 
  
+Para utilizar o projeto basta : 
+
+Cloná-lo
+
+$ git clone git@github.com:Vanderson-Oliveira12/Landing-Page-Ecommerce.git
+
+Ou
  
-O Projeto foi bastante desafiador, pois existe alguns conceitos que eu não cheguei a abordar. Mas será de grande satisfação vencê-los
+acessá-lo pelo link direto: https://zring.netlify.app/
