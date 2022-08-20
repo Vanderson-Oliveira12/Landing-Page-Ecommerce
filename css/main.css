@@ -643,12 +643,53 @@ section {
   gap: 2.4rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .custom-desktop {
+    display: none;
+    border: 1px solid red;
+  }
+}
+
+.custom-mobile {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .custom-mobile {
+    display: block;
+    flex: 1 0 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+    position: relative;
+  }
+}
+
+.custom-text-all {
+  height: 26rem;
+}
+
 .comment-text {
   width: 80%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .comment-text {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .comment-text-mobile {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
   }
 }
 
@@ -698,6 +739,13 @@ p.comment-author-text {
 .customers-arrow img {
   cursor: pointer;
   padding: 0.5rem 0.1rem;
+}
+
+/* Classe para o slide */
+.comment-active {
+  opacity: 1;
+  display: block;
+  transition: 3s ease;
 }
 
 .contact-all {

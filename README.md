@@ -1,5 +1,5 @@
 # Landing Page Ecommerce
- Essa WebPage foi desenvolvida com HTML, CSS e JAVASCRIPT PURO.
+ Essa WebPage foi desenvolvida com HTML, CSS(SASS) e JAVASCRIPT PURO.
 
  O intuito dessa página, foi abordar todos os tópicos que eu aprendi durante esses meses de estudos. Respeitando as boas práticas de programação,
  e a legibilidade do código. 
@@ -14,3 +14,11 @@ git clone git@github.com:Vanderson-Oliveira12/Landing-Page-Ecommerce.git
 Ou
  
 acessá-lo pelo link direto: https://zring.netlify.app/
+
+instale as dependências através deste cód:
+
+yarn install
+
+para rodar o SASS, basta utilizar este comando no terminal do próprio VSCODE:
+
+sass --watch sass/main.scss:css/main.css

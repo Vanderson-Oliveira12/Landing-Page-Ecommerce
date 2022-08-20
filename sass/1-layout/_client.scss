@@ -56,11 +56,52 @@
     gap: 2.4rem;
 }
 
+.custom-desktop{
+    @include medias.small{
+        display: none;
+        border: 1px solid red;
+    }
+}
+
+.custom-mobile{
+    display: none;
+
+    @include medias.small{
+        display: block;
+        flex: 1 0 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.4rem;
+        position: relative;
+    }
+}
+
+.custom-text-all{
+    height: 26rem;
+}
+
 .comment-text{
     width: 80%;
 
     @include medias.small{
         width: 100%;
+    }
+}
+
+.comment-text-mobile{
+
+    @include medias.small{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        opacity: 0;
     }
 }
 
@@ -114,3 +155,12 @@ p.comment-author-text{
             padding: .5rem .1rem;
         }
 }
+
+/* Classe para o slide */
+
+.comment-active{
+    opacity: 1;
+    display: block;
+    transition: 3s ease;
+}
+
