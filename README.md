@@ -8,7 +8,8 @@ Para utilizar o projeto basta :
 
 Cloná-lo
 
-$ git clone git@github.com:Vanderson-Oliveira12/Landing-Page-Ecommerce.git
+git clone git@github.com:Vanderson-Oliveira12/Landing-Page-Ecommerce.git
+
 
 Ou
  
