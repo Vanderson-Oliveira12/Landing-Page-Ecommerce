@@ -156,6 +156,19 @@ p.comment-author-text{
         }
 }
 
+.customers-arrow-mobile{
+    padding-top: 3.2rem;
+    display: flex;
+    align-self: flex-end;
+    gap: .4rem;
+    z-index: 9;
+
+        img{
+            cursor: pointer;
+            padding: .5rem .1rem;
+        }
+}
+
 /* Classe para o slide */
 
 .comment-active{
