@@ -105,9 +105,10 @@
     }
 }
 
-.about-content-img {
+.about-img-all{
     display: flex;
-    gap: 3.6rem;
+    align-items: flex-end;
+    gap: 3rem;
 }
 
 .about-img-groups {
@@ -116,6 +117,9 @@
     gap: 3rem;
 }
 
-.img-group-two {
-    margin-top: -8rem;
+.about-img-one{
+    padding-bottom: 4rem;
 }
+
+
+

@@ -20,10 +20,11 @@ function menuToggleClose(){
     });
 }
 
-import { carrouselAbout, CarouselClient } from './carousel.js';
+import { carrouselAbout, CarouselClient, CarouselClientDesktop } from './carousel.js';
 
 window.addEventListener('load', carrouselAbout);
 window.addEventListener('load', CarouselClient);
+window.addEventListener('load', CarouselClientDesktop);
 
 
 menuToggleClose();

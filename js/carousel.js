@@ -17,7 +17,81 @@ function carrouselAbout() {
 
 }
 
-function CarouselClient(){
+/* Versão Desktop */
+
+export function CarouselClientDesktop() {
+    let imgArr, imgIndex, imgLength;
+
+    imgArr = document.querySelectorAll('.comment-item');
+    imgIndex = 0;
+    imgLength = imgArr.length;
+
+    setInterval(() => {
+        imgArr[imgIndex].classList.remove('comment-item-active')
+        imgIndex++
+        if (imgIndex >= imgLength) {
+            imgIndex = 0
+        }
+        imgArr[imgIndex].classList.add('comment-item-active')
+    }, 4000)
+
+    let arrowNext, ArrowPrev;
+
+    ArrowPrev = document.querySelector('.arrow-left');
+    arrowNext = document.querySelector('.arrow-right');
+
+    arrowNext.addEventListener('click', ()=>{
+        imgArr[imgIndex].classList.remove('comment-item-active')
+        imgIndex++
+        if (imgIndex >= imgLength) {
+            imgIndex = 0
+        }
+        imgArr[imgIndex].classList.add('comment-item-active')
+    })
+
+    ArrowPrev.addEventListener('click', ()=>{
+        imgArr[imgIndex].classList.remove('comment-item-active')
+        imgIndex--
+        if(imgIndex < 0){
+            imgIndex = imgLength - 1;
+        }
+        imgArr[imgIndex].classList.add('comment-item-active')
+    })
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Versao mobile */
+
+function CarouselClient() {
     let clientsComment, indexComment, intervalComment, maxComment;
 
     clientsComment = document.querySelectorAll('.comment-text-mobile')
@@ -25,11 +99,11 @@ function CarouselClient(){
     intervalComment = 3000;
     maxComment = clientsComment.length;
 
-    setInterval(()=>{
+    setInterval(() => {
         clientsComment[indexComment].classList.remove('comment-active')
         indexComment++
 
-        if(indexComment >= maxComment){
+        if (indexComment >= maxComment) {
             indexComment = 0;
         }
 
@@ -40,11 +114,11 @@ function CarouselClient(){
     let btnPrev = document.querySelector('.prev-client');
     let btnNext = document.querySelector('.next-client');
 
-    btnNext.addEventListener('click', ()=>{
+    btnNext.addEventListener('click', () => {
         clientsComment[indexComment].classList.remove('comment-active');
         indexComment++
 
-        if(indexComment >= maxComment){
+        if (indexComment >= maxComment) {
             indexComment = 0;
         }
 
@@ -52,11 +126,11 @@ function CarouselClient(){
         clientsComment[indexComment].classList.add('comment-active')
     });
 
-    btnPrev.addEventListener('click', ()=>{
+    btnPrev.addEventListener('click', () => {
         clientsComment[indexComment].classList.remove('comment-active');
         indexComment--
 
-        if(indexComment < 0){
+        if (indexComment < 0) {
             indexComment = maxComment - 1;
         }
 
@@ -66,4 +140,4 @@ function CarouselClient(){
 
 }
 
-export {CarouselClient, carrouselAbout}
+export { CarouselClient, carrouselAbout }

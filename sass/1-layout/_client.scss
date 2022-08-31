@@ -59,8 +59,26 @@
 .custom-desktop{
     @include medias.small{
         display: none;
-        border: 1px solid red;
     }
+}
+
+.comment-all-item{
+    height: 350px;
+    position: relative;
+}
+
+.comment-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.comment-item-active{
+    opacity: 1;
 }
 
 .custom-mobile{
@@ -146,8 +164,10 @@ p.comment-author-text{
 
 .customers-arrow{
     padding-top: 3.2rem;
-    display: flex;
-    align-self: flex-end;
+    display: flex; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
     gap: .4rem;
 
         img{
