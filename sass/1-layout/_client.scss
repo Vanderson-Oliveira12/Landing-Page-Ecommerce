@@ -8,192 +8,133 @@
 }
 
 .customers-all{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.customers-title h2{
-    color: #ffffff;
-    font-size: 4.2rem;
-    padding-bottom: 6rem;
-
     @include medias.small{
-        font-size: 2.8rem;
+        height: 80rem;
     }
 }
 
-.customers-content{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.customers-title{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 6rem;
 
     @include medias.small{
-        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+     h2{
+        font-size: 3.8rem;
+        color: #fff;
+
+            @include medias.small{
+                font-size: 2.8rem;
+            }
+     }
+}
+
+.customers-content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    @include medias.small{
+        flex-direction: column;
     }
 }
 
 .customers-img{
-    flex: 1 0 45%;
+    flex: 1 0 40%;
 
+    
+}
+
+.customers-img img{
     @include medias.small{
-        flex: 1 0 100%;
-    }
-
-    img{
-        @include medias.small{
-            width: 25rem;
-            margin: 0 auto;
-        }
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
-.customers-comment{
-    flex: 1 0 55%;
+.customers-clients{
+    flex: 1 0 58%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2.4rem;
-}
-
-.custom-desktop{
-    @include medias.small{
-        display: none;
-    }
-}
-
-.comment-all-item{
-    height: 350px;
+    height: 460px;
     position: relative;
+
+    @include medias.small{
+        width: 100%;
+    }
+
+      h3{
+        font-size: 2.8rem;
+        color: #fff;
+
+            @include medias.small{
+                padding-top: 1.2rem;
+                font-size: 2.2rem;
+            }
+      }
+
+      h4{
+        color: variables.$subtitle-color;
+        font-weight: 700;
+        padding-bottom: .8rem;
+      }
+
+      h5{
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      p{
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        line-height: 2.8rem;
+        width: 70%;
+        padding: 2.4rem 0;
+
+            @include medias.small{
+                width: 100%;
+                font-size: 1.4rem;
+            }
+      }
 }
 
-.comment-item{
+.customers-item{
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
     opacity: 0;
-    transition: 1.5s ease;
 }
 
-.comment-item-active{
+.customers-item-active{
     opacity: 1;
 }
-
-.custom-mobile{
-    display: none;
-
-    @include medias.small{
-        display: block;
-        flex: 1 0 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2.4rem;
-        position: relative;
-    }
-}
-
-.custom-text-all{
-    height: 26rem;
-}
-
-.comment-text{
-    width: 80%;
-
-    @include medias.small{
-        width: 100%;
-    }
-}
-
-.comment-text-mobile{
-
-    @include medias.small{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        opacity: 0;
-    }
-}
-
-h3.comment-author-title{
-    color: #ffffff;
-    font-size: 3.6rem;
-
-    @include medias.small{
-        font-size: 2.4rem;
-    }
-}
-
-p.comment-author-text{
-    line-height: 1.8;
-    width: 100%;
-    padding: 2.4rem 0;
-    font-weight: 400;
-    color: #b7c0c5;
-
-    @include medias.small{
-        font-size: 1.4rem;
-    }
-}
-
-
-.comment-author{
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
-
-    .author-name{
-        color: variables.$subtitle-color;
-    }
-
-    .author-work{
-        font-size: 1.4rem;
-        font-weight: 400;
-        color: #b7c0c5;
-    }
-}
-
 
 .customers-arrow{
-    padding-top: 3.2rem;
-    display: flex; 
     position: absolute;
-    bottom: 0;
-    right: 0;
-    gap: .4rem;
-
-        img{
-            cursor: pointer;
-            padding: .5rem .1rem;
-        }
-}
-
-.customers-arrow-mobile{
-    padding-top: 3.2rem;
+    bottom: 10rem;
     display: flex;
-    align-self: flex-end;
-    gap: .4rem;
-    z-index: 9;
+    align-items: center;
+    justify-content: end;
+    gap: 1.2rem;
+    width: 70%;
+    padding-top: 6rem;
 
-        img{
-            cursor: pointer;
-            padding: .5rem .1rem;
+        @include medias.small{
+            top: 34rem;
+            width: 100%;
+            padding-top: 0;
         }
 }
 
-/* Classe para o slide */
 
-.comment-active{
-    opacity: 1;
-    display: block;
-    transition: 3s ease;
-}
+
 
