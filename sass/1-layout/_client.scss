@@ -112,9 +112,11 @@
     right: 0;
     bottom: 0;
     opacity: 0;
+
 }
 
 .customers-item-active{
+    transition: 2s ease;
     opacity: 1;
 }
 

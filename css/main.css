@@ -725,6 +725,7 @@ section {
 }
 
 .customers-item-active {
+  transition: 2s ease;
   opacity: 1;
 }
 
