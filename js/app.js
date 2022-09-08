@@ -1,4 +1,5 @@
 import { carouselClients, carouselClientContent } from "./carousel.js"
+import { products } from "./products.js"
 
 const menuBurguer = {
     menuOpenButton: document.querySelector('.burguer'),
@@ -18,4 +19,5 @@ const menuBurguer = {
 
 menuBurguer.menuInit();
 carouselClients.carouselInit();
+products.init();
 carouselClientContent.carouselContentRender();

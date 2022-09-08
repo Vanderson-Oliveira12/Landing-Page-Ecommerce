@@ -56,11 +56,18 @@
     font-weight: 600;
 }
 
-.products-group{
+.products-group-all{
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: .5rem;
+    height: 75rem;
+}
+
+.products-group{
+    position: absolute;
+    inset: 0;
 }
 
 .products-group-item{
