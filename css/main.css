@@ -531,6 +531,13 @@ section {
 .products-group {
   position: absolute;
   inset: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.products-group-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .products-group-item {
@@ -752,6 +759,9 @@ section {
     width: 100%;
     padding-top: 0;
   }
+}
+.customers-arrow img {
+  cursor: pointer;
 }
 
 .contact-all {

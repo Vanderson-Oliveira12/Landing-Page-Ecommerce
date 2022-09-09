@@ -68,6 +68,13 @@
 .products-group{
     position: absolute;
     inset: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.products-group-active{
+    visibility: visible;
+    opacity: 1;
 }
 
 .products-group-item{
