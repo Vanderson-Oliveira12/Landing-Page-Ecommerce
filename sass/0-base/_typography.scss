@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .title-section{
-    font-size: 4.2rem;
+    font-size: 3.4rem;
 
     @include medias.small{
         font-size: 2.8rem;
@@ -18,6 +18,14 @@ h1, h2, h3, h4, h5, h6{
 
     @include medias.small-medium{
         font-size: 2.8rem;
+    }
+
+    @include medias.medium{
+        font-size: 2.8rem;
+    }
+
+    @include medias.large{
+        font-size: 3.2rem;
     }
 }
 
@@ -29,6 +37,10 @@ h1, h2, h3, h4, h5, h6{
     }
 
     @include medias.small-medium{
+        font-size: 1.6rem;
+    }
+
+    @include medias.medium{
         font-size: 1.6rem;
     }
 }

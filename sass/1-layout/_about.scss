@@ -26,6 +26,10 @@
             width: 90%;
             text-align: center;
         }
+
+        @include medias.medium {
+            width: 45%;
+        }
     }
 }
 
@@ -83,10 +87,9 @@
     @include medias.small {
         display: none;
     }
-
     
     @include medias.small-medium {
-        display: none;
+        padding-top: 6rem;
     }
 }
 
@@ -94,13 +97,6 @@
     display: none;
 
     @include medias.small {
-        margin-top: 4rem;
-        display: block;
-        position: relative;
-        height: 350px;
-    }
-
-    @include medias.small-medium {
         margin-top: 4rem;
         display: block;
         position: relative;

@@ -9,6 +9,10 @@ nav.nav-desktop{
     @include medias.small-medium{
         display: none;
     }
+
+    @include medias.medium{
+        display: none;
+    }
 }
 
 nav.nav-mobile{
@@ -28,6 +32,19 @@ nav.nav-mobile{
     }
 
     @include medias.small-medium{
+        padding: 1rem 1.4rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    
+        .burguer{
+            font-size: 2.4rem;
+            padding: 1rem;
+        }
+    }
+
+    @include medias.medium{
         padding: 1rem 1.4rem;
         display: flex;
         width: 100%;
@@ -71,6 +88,14 @@ nav.nav-mobile{
     width: 80%;
     transition: .5s ease;
     font-size: 1.6rem;
+
+    @include medias.small-medium{
+        width: 60%;
+    }
+
+    @include medias.medium{
+        width: 50%;
+    }
 }
 
 .menu-active{

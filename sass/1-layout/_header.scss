@@ -8,9 +8,6 @@
         height: 88vh;
     }
 
-    @include medias.small-medium{
-        height: 88vh;
-    }
 }
 
 .header-content-desktop {
@@ -22,9 +19,6 @@
         display: none;
     }
 
-    @include medias.small-medium{
-        display: none;
-    }
 }
 
 .header-content-mobile {
@@ -37,12 +31,6 @@
         display: block;
     }
 
-    @include medias.small-medium{
-        width: 100%;
-        height: 95%;
-        position: relative;
-        display: block;
-    }
 }
 
 .header-content-text {
@@ -76,6 +64,15 @@
         @include medias.small-medium {
             font-size: 2.8rem;
         }
+
+        @include medias.medium {
+            font-size: 3.2rem;
+        }
+
+        
+        @include medias.large {
+            font-size: 3.6rem;
+        }
     }
 
     p {
@@ -89,9 +86,13 @@
         }
 
         @include medias.small-medium {
-            width: 90%;
+            width: 100%;
             font-size: 1.4rem;
             margin: 0 auto;
+        }
+
+        @include medias.medium {
+            font-size: 1.6rem;
         }
     }
 }
@@ -119,8 +120,22 @@
     @include medias.small-medium{
         width: 50px;
         height: auto;
-        top: 61px;
-        right: 8px;
+        top: 25px;
+        right: 20px;
+    }
+
+    @include medias.medium{
+        width: 50px;
+        height: auto;
+        top: 28px;
+        right: 29px;
+    }
+
+    @include medias.large{
+        width: 50px;
+        height: auto;
+        top: 32px;
+        right: 3px;
     }
 }
 
@@ -143,6 +158,14 @@
         width: 90%;
     }
 
+    @include medias.medium{
+        width: 90%;
+    }
+
+    @include medias.large{
+        width: 80%;
+    }
+
     input[type="search"] {
         padding: 2.4rem 3rem;
         border: none;
@@ -162,6 +185,14 @@
             @include medias.small-medium{
                 font-size: 1.4rem;
             }
+
+            @include medias.medium{
+                font-size: 1.4rem;
+            }
+
+            @include medias.large{
+                font-size: 1.4rem;
+            }
         }
 
         &:focus::placeholder {
@@ -174,7 +205,17 @@
         }
 
         @include medias.small-medium{
-            width: 80%;
+            width: 88%;
+            padding: 1.8rem 2.6rem;
+        }
+
+        @include medias.medium{
+            width: 90%;
+            padding: 1.8rem 2.6rem;
+        }
+
+        @include medias.large{
+            width: 90%;
             padding: 1.8rem 2.6rem;
         }
 
@@ -202,10 +243,6 @@
     @include medias.small{
         display: none;
     }
-
-    @include medias.small-medium{
-        display: none;
-    }
 }
 
 .header-content-img-mobile{
@@ -215,7 +252,7 @@
         display: block;
     }
 
-    @include medias.small-medium{
-        display: block;
+    @include medias.medium{
+        display: none;
     }
 }
