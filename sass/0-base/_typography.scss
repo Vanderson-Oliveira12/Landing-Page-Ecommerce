@@ -15,12 +15,20 @@ h1, h2, h3, h4, h5, h6{
     @include medias.small{
         font-size: 2.8rem;
     }
+
+    @include medias.small-medium{
+        font-size: 2.8rem;
+    }
 }
 
 .subtitle-section{
     font-size: 2rem;
 
     @include medias.small{
+        font-size: 1.6rem;
+    }
+
+    @include medias.small-medium{
         font-size: 1.6rem;
     }
 }

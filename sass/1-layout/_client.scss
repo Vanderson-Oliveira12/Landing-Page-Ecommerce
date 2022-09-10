@@ -11,6 +11,10 @@
     @include medias.small{
         height: 80rem;
     }
+
+    @include medias.small-medium{
+        height: 80rem;
+    }
 }
 
 .customers-title{
@@ -22,11 +26,19 @@
         padding-bottom: 4rem;
     }
 
+    @include medias.small-medium{
+        padding-bottom: 4rem;
+    }
+
      h2{
         font-size: 3.8rem;
         color: #fff;
 
             @include medias.small{
+                font-size: 2.8rem;
+            }
+
+            @include medias.small-medium{
                 font-size: 2.8rem;
             }
      }
@@ -43,6 +55,10 @@
     @include medias.small{
         flex-direction: column;
     }
+
+    @include medias.small-medium{
+        flex-direction: column;
+    }
 }
 
 .customers-img{
@@ -53,6 +69,11 @@
 
 .customers-img img{
     @include medias.small{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    @include medias.small-medium{
         width: 70%;
         margin: 0 auto;
     }
@@ -70,11 +91,20 @@
         width: 100%;
     }
 
+    @include medias.small-medium{
+        width: 100%;
+    }
+
       h3{
         font-size: 2.8rem;
         color: #fff;
 
             @include medias.small{
+                padding-top: 1.2rem;
+                font-size: 2.2rem;
+            }
+
+            @include medias.small-medium{
                 padding-top: 1.2rem;
                 font-size: 2.2rem;
             }
@@ -99,6 +129,11 @@
         padding: 2.4rem 0;
 
             @include medias.small{
+                width: 100%;
+                font-size: 1.4rem;
+            }
+
+            @include medias.small-medium{
                 width: 100%;
                 font-size: 1.4rem;
             }
@@ -131,6 +166,12 @@
     padding-top: 6rem;
 
         @include medias.small{
+            top: 34rem;
+            width: 100%;
+            padding-top: 0;
+        }
+
+        @include medias.small-medium{
             top: 34rem;
             width: 100%;
             padding-top: 0;

@@ -8,6 +8,10 @@ footer{
     @include medias.small{
         padding-top: 3.2rem;
     }
+
+    @include medias.small-medium{
+        padding-top: 3.2rem;
+    }
 }
 
 .footer-all{
@@ -28,6 +32,12 @@ footer{
     justify-content: space-between;
 
     @include medias.small{
+        gap: 3.6rem;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+
+    @include medias.small-medium{
         gap: 3.6rem;
         flex-direction: column;
         font-size: 1.4rem;

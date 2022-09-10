@@ -19,6 +19,10 @@
     @include medias.small{
         display: none;
     }
+
+    @include medias.small-medium{
+        display: none;
+    }
 }
 
 .contact-img-mobile{
@@ -30,6 +34,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    @include medias.small-medium{
+        flex: 1 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
         gap: 3rem;
         padding-bottom: 4rem;
     }
@@ -60,6 +74,10 @@
 
             @include medias.small{
                 text-align: center;
+            }     
+            
+            @include medias.small-medium{
+                text-align: center;
             }       
         }
 
@@ -71,6 +89,10 @@
             @include medias.small{
                 text-align: center;
             }
+
+            @include medias.small-medium{
+                text-align: center;
+            }
         }
 }
 
@@ -78,6 +100,10 @@
     flex: 1 0 50%;
 
     @include medias.small{
+        flex: 1 0 100%;
+    }
+
+    @include medias.small-medium{
         flex: 1 0 100%;
     }
 }
@@ -115,6 +141,10 @@
     @include medias.small{
         font-size: 1.2rem;
     }
+
+    @include medias.small-medium{
+        font-size: 1.2rem;
+    }
 }
 
 #messageClient:focus::placeholder{
@@ -129,6 +159,11 @@
         flex-direction: column;
         gap: 1.5rem;
     }
+
+    @include medias.small-medium{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 .field input{
@@ -138,6 +173,10 @@
     border: 1px solid rgb(17, 43, 60);
 
     @include medias.small{
+        font-size: 1.2rem;
+    }
+
+    @include medias.small-medium{
         font-size: 1.2rem;
     }
 }

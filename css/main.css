@@ -51,11 +51,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.8rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .title-section {
+    font-size: 2.8rem;
+  }
+}
 
 .subtitle-section {
   font-size: 2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .subtitle-section {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .subtitle-section {
     font-size: 1.6rem;
   }
@@ -74,11 +84,29 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  nav.nav-desktop {
+    display: none;
+  }
+}
 
 nav.nav-mobile {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  nav.nav-mobile {
+    padding: 1rem 1.4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav.nav-mobile .burguer {
+    font-size: 2.4rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   nav.nav-mobile {
     padding: 1rem 1.4rem;
     display: flex;
@@ -180,6 +208,11 @@ nav.nav-mobile {
     height: 88vh;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-section {
+    height: 88vh;
+  }
+}
 
 .header-content-desktop {
   width: 100%;
@@ -191,11 +224,24 @@ nav.nav-mobile {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-content-desktop {
+    display: none;
+  }
+}
 
 .header-content-mobile {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-content-mobile {
+    width: 100%;
+    height: 95%;
+    position: relative;
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-content-mobile {
     width: 100%;
     height: 95%;
@@ -232,11 +278,23 @@ nav.nav-mobile {
     font-size: 2.8rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-content-title h1 {
+    font-size: 2.8rem;
+  }
+}
 .header-content-title p {
   font-size: 1.6rem;
   line-height: 1.8;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-content-title p {
+    width: 90%;
+    font-size: 1.4rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-content-title p {
     width: 90%;
     font-size: 1.4rem;
@@ -265,6 +323,14 @@ nav.nav-mobile {
     right: 8px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-seta {
+    width: 50px;
+    height: auto;
+    top: 61px;
+    right: 8px;
+  }
+}
 
 .header-input {
   display: flex;
@@ -279,6 +345,11 @@ nav.nav-mobile {
   /* Remove o X do campo search */
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-input {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-input {
     width: 90%;
   }
@@ -300,10 +371,21 @@ nav.nav-mobile {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-input input[type=search]::placeholder {
+    font-size: 1.4rem;
+  }
+}
 .header-input input[type=search]:focus::placeholder {
   opacity: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-input input[type=search] {
+    width: 80%;
+    padding: 1.8rem 2.6rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-input input[type=search] {
     width: 80%;
     padding: 1.8rem 2.6rem;
@@ -328,11 +410,21 @@ nav.nav-mobile {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-content-img-desktop {
+    display: none;
+  }
+}
 
 .header-content-img-mobile {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-content-img-mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .header-content-img-mobile {
     display: block;
   }
@@ -354,12 +446,23 @@ section {
     align-items: center;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-text {
+    align-items: center;
+  }
+}
 .about-text p {
   width: 40%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-text p {
     width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-text p {
+    width: 90%;
     text-align: center;
   }
 }
@@ -373,6 +476,12 @@ section {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .about-content {
     padding: 4rem 4rem 0;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-content {
+    padding: 2rem 2rem 0;
     flex-direction: column;
   }
 }
@@ -400,6 +509,12 @@ section {
     width: 100%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-content-mission p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 .about-content-img-desktop {
   flex: 1 0 50%;
@@ -409,11 +524,24 @@ section {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-content-img-desktop {
+    display: none;
+  }
+}
 
 .about-content-img-mobile {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .about-content-img-mobile {
+    margin-top: 4rem;
+    display: block;
+    position: relative;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .about-content-img-mobile {
     margin-top: 4rem;
     display: block;
@@ -448,6 +576,12 @@ section {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .about-cards-group {
+    text-align: center;
+    gap: 1.6rem;
+  }
+}
 
 .about-img-all {
   display: flex;
@@ -480,6 +614,14 @@ section {
   gap: 2.5rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .products-btns {
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 1.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .products-btns {
     overflow-y: auto;
     align-items: flex-start;
@@ -555,6 +697,14 @@ section {
     scroll-snap-type: x mandatory;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .products-group-item {
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+}
 
 /* Scroll, decidi tirar para melhor visualização */
 .products-group-item::-webkit-scrollbar {
@@ -590,6 +740,16 @@ section {
     scroll-padding-left: 2rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .product-item {
+    flex: none;
+    width: 32rem;
+    height: 35rem;
+    gap: 1.5rem;
+    scroll-snap-align: start;
+    scroll-padding-left: 2rem;
+  }
+}
 
 .product-img {
   align-self: center;
@@ -603,6 +763,11 @@ section {
   padding: 0.8rem 2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .product-item-infor {
+    padding: 0.8rem 2.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .product-item-infor {
     padding: 0.8rem 2.4rem;
   }
@@ -637,6 +802,11 @@ section {
     height: 80rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .customers-all {
+    height: 80rem;
+  }
+}
 
 .customers-title {
   width: 90%;
@@ -648,11 +818,21 @@ section {
     padding-bottom: 4rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .customers-title {
+    padding-bottom: 4rem;
+  }
+}
 .customers-title h2 {
   font-size: 3.8rem;
   color: #fff;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .customers-title h2 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .customers-title h2 {
     font-size: 2.8rem;
   }
@@ -671,12 +851,23 @@ section {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .customers-content {
+    flex-direction: column;
+  }
+}
 
 .customers-img {
   flex: 1 0 40%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .customers-img img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .customers-img img {
     width: 70%;
     margin: 0 auto;
@@ -696,11 +887,22 @@ section {
     width: 100%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .customers-clients {
+    width: 100%;
+  }
+}
 .customers-clients h3 {
   font-size: 2.8rem;
   color: #fff;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .customers-clients h3 {
+    padding-top: 1.2rem;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .customers-clients h3 {
     padding-top: 1.2rem;
     font-size: 2.2rem;
@@ -723,6 +925,12 @@ section {
   padding: 2.4rem 0;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .customers-clients p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .customers-clients p {
     width: 100%;
     font-size: 1.4rem;
@@ -760,6 +968,13 @@ section {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .customers-arrow {
+    top: 34rem;
+    width: 100%;
+    padding-top: 0;
+  }
+}
 .customers-arrow img {
   cursor: pointer;
 }
@@ -783,6 +998,11 @@ section {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contact-img-desktop {
+    display: none;
+  }
+}
 
 .contact-img-mobile {
   display: none;
@@ -794,6 +1014,17 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contact-img-mobile {
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 3rem;
     padding-bottom: 4rem;
   }
@@ -827,10 +1058,20 @@ section {
     text-align: center;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contact-title p {
+    text-align: center;
+  }
+}
 .contact-title strong {
   font-weight: 400;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .contact-title h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .contact-title h2 {
     text-align: center;
   }
@@ -840,6 +1081,11 @@ section {
   flex: 1 0 50%;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .contact-form {
+    flex: 1 0 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .contact-form {
     flex: 1 0 100%;
   }
@@ -880,6 +1126,11 @@ section {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #messageClient::placeholder {
+    font-size: 1.2rem;
+  }
+}
 
 #messageClient:focus::placeholder {
   opacity: 0;
@@ -895,6 +1146,12 @@ section {
     gap: 1.5rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .contact-field {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 
 .field input {
   color: #696969;
@@ -903,6 +1160,11 @@ section {
   border: 1px solid rgb(17, 43, 60);
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .field input {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .field input {
     font-size: 1.2rem;
   }
@@ -927,6 +1189,11 @@ footer {
     padding-top: 3.2rem;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  footer {
+    padding-top: 3.2rem;
+  }
+}
 
 .footer-all {
   width: 90%;
@@ -946,6 +1213,13 @@ footer {
   justify-content: space-between;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-links {
+    gap: 3.6rem;
+    flex-direction: column;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .footer-links {
     gap: 3.6rem;
     flex-direction: column;

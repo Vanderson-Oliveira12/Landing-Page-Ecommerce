@@ -1,12 +1,37 @@
 const carouselClients = {
     carouselItem: document.querySelectorAll('.customers-clients .customers-item'),
+    carouselArrows: document.querySelectorAll('.customers-arrow img'),
     carouselInterval: 3000,
     carouselIndex: 0,
-    carouselArrows: document.querySelectorAll('.customers-arrow img'),
     carouselActivated() {
         let carouselItemArr = carouselClients.carouselItem;
         let carouselLength = carouselItemArr.length - 1;
-        let arrowItem = carouselClients.carouselArrows;
+        let arrowLeft = this.carouselArrows[0];
+        let arrowRight = this.carouselArrows[1];
+
+        arrowRight.addEventListener('click', () => {
+            carouselItemArr[carouselClients.carouselIndex].classList.remove('customers-item-active');
+
+            carouselClients.carouselIndex += 1
+
+            if (carouselClients.carouselIndex > carouselLength) {
+                carouselClients.carouselIndex = 0
+            }
+            carouselItemArr[carouselClients.carouselIndex].classList.add('customers-item-active');
+        })
+
+        arrowLeft.addEventListener('click', () => {
+            carouselItemArr[carouselClients.carouselIndex].classList.remove('customers-item-active');
+
+            if (carouselClients.carouselIndex <= 0) {
+                this.carouselIndex = carouselLength + 1
+            }
+
+            carouselClients.carouselIndex -= 1
+
+            console.log(carouselClients.carouselIndex)
+            carouselItemArr[carouselClients.carouselIndex].classList.add('customers-item-active');
+        })
 
         setInterval(() => {
             carouselItemArr[carouselClients.carouselIndex].classList.remove('customers-item-active');
@@ -19,46 +44,6 @@ const carouselClients = {
             carouselItemArr[carouselClients.carouselIndex].classList.add('customers-item-active');
 
         }, this.carouselInterval)
-
-        arrowItem.forEach(arrow => {
-            arrow.addEventListener('click', this.carouselArrowsActive)
-        })
-
-    },
-    carouselArrowsActive() {
-        let carouselArrowItem = carouselClients.carouselArrows;
-        let carouselItemArr = carouselClients.carouselItem;
-        let carouselLength = carouselItemArr.length - 1;
-
-        carouselArrowItem.forEach(arrow => {
-            arrow.addEventListener('click', () => {
-                let arrowValueName = arrow.name
-
-                if (arrowValueName === "arrow-right") {
-                    carouselItemArr[carouselClients.carouselIndex].classList.remove('customers-item-active');
-                    carouselClients.carouselIndex += 1
-
-                    if (carouselClients.carouselIndex > carouselLength) carouselClients.carouselIndex = 0;
-
-                    carouselItemArr[carouselClients.carouselIndex].classList.add('customers-item-active');
-                } else if (arrowValueName === "arrow-left") {
-
-                    console.log(carouselClients.carouselIndex)
-                    carouselItemArr[carouselClients.carouselIndex].classList.remove('customers-item-active');
-
-                    carouselClients.carouselIndex -= 1
-
-                    if (carouselClients.carouselIndex < carouselLength) {
-                        carouselClients.carouselIndex = carouselLength;
-                    }
-
-
-
-                    carouselItemArr[carouselClients.carouselIndex].classList.add('customers-item-active');
-
-                }
-            })
-        })
 
     },
     carouselInit() {
