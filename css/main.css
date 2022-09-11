@@ -766,7 +766,10 @@ section {
 .products-group-item {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 2rem;
   padding: 1rem 0;
 }
@@ -825,13 +828,16 @@ section {
   justify-content: space-between;
   flex: 1 0 25%;
   background-color: #FFF8F0;
+  padding-top: 3rem;
   padding-bottom: 1rem;
+  scroll-snap-align: start;
+  scroll-padding-left: 2rem;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .product-item {
     flex: none;
     width: 32rem;
-    height: 35rem;
+    height: 38rem;
     gap: 1.5rem;
     scroll-snap-align: start;
     scroll-padding-left: 2rem;
@@ -841,7 +847,7 @@ section {
   .product-item {
     flex: none;
     width: 32rem;
-    height: 35rem;
+    height: 38rem;
     gap: 1.5rem;
     scroll-snap-align: start;
     scroll-padding-left: 2rem;
@@ -851,7 +857,7 @@ section {
   .product-item {
     flex: none;
     width: 32rem;
-    height: 35rem;
+    height: 38rem;
     gap: 1.5rem;
     scroll-snap-align: start;
     scroll-padding-left: 2rem;
@@ -861,7 +867,7 @@ section {
   .product-item {
     flex: none;
     width: 32rem;
-    height: 35rem;
+    height: 38rem;
     gap: 1.5rem;
     scroll-snap-align: start;
     scroll-padding-left: 2rem;
@@ -1503,6 +1509,10 @@ a.link-item:hover {
 
 .w-100 {
   width: 100%;
+}
+
+.zero-auto {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

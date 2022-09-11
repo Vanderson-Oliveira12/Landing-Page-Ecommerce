@@ -88,9 +88,13 @@
 .products-group-item{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 2rem;
     padding: 1rem 0;
+
     
     @include medias.small{
         justify-content: flex-start;
@@ -145,12 +149,15 @@
     justify-content: space-between;
     flex: 1 0 25%;
     background-color: #FFF8F0;
+    padding-top: 3rem;
     padding-bottom: 1rem;
+    scroll-snap-align: start;
+    scroll-padding-left: 2rem;
 
     @include medias.small{
         flex: none;
         width: 32rem;
-        height: 35rem;
+        height: 38rem;
         gap: 1.5rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
@@ -159,7 +166,7 @@
     @include medias.small-medium{
         flex: none;
         width: 32rem;
-        height: 35rem;
+        height: 38rem;
         gap: 1.5rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
@@ -168,7 +175,7 @@
     @include medias.medium{
         flex: none;
         width: 32rem;
-        height: 35rem;
+        height: 38rem;
         gap: 1.5rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
@@ -177,7 +184,7 @@
     @include medias.large{
         flex: none;
         width: 32rem;
-        height: 35rem;
+        height: 38rem;
         gap: 1.5rem;
         scroll-snap-align: start;
         scroll-padding-left: 2rem;
